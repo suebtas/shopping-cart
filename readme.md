@@ -1,3 +1,28 @@
+Lab1
+#1.โหลด image
+docker load -i e:\itec1203.tar
+
+#2. สร้าง contranner
+docker run -it --name laravel -p 80:80 -v /var/www/html suebtas/docker-laravel
+
+#3. ตรวจสอบ image
+docker images
+
+#4.โหลด โปรเจค laravel ไฟล์จากเซิร์ฟเวอร์
+php composer.phar create-project --prefer-dist laravel "5.2" html
+laravel.zip
+
+(แตกไฟล์ shopping-chart.zip )
+C:\Users\ITStudent\Documents\shopping-chart
+
+#sqlyog
+ip:192.168.99.100
+user:root 
+password:<ที่เราตั้งใน docker>
+-สร้างไฟล์และไดเร็กทรอรีย์
+-สร้าง Folder layouts, partials, shop, user 
+-สร้างไฟล์ layout
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
